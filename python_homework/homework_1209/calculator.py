@@ -39,5 +39,5 @@ class Calculator:
             raise ZeroDivisionError
 
 
-ca = Calculator()
-print(ca.div_func(4, 2))
+# ca = Calculator()
+# print(ca.div_func(4, 2))
