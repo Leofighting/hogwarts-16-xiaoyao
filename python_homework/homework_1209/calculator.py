@@ -6,7 +6,11 @@ class Calculator:
         :param b: 加数
         :return: 和
         """
-        return a + b
+        # 判断 a, b 是否为整数或者小数
+        if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+            result = a + b
+            return result
+        raise TypeError("a,b 都必须为整数或者小数！")
 
     def sub_func(self, a, b):
         """
@@ -15,7 +19,11 @@ class Calculator:
         :param b: 减数
         :return: 差
         """
-        return a - b
+        # 判断 a, b 是否为整数或者小数
+        if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+            result = a - b
+            return result
+        raise TypeError("a,b 都必须为整数或者小数！")
 
     def mul_func(self, a, b):
         """
@@ -24,7 +32,11 @@ class Calculator:
         :param b: 乘数
         :return: 积
         """
-        return a * b
+        # 判断 a, b 是否为整数或者小数
+        if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+            result = a * b
+            return result
+        raise TypeError("a,b 都必须为整数或者小数！")
 
     def div_func(self, a, b):
         """
@@ -33,11 +45,11 @@ class Calculator:
         :param b: 除数
         :return: 商
         """
-        try:
-            return a / b
-        except:
-            raise ZeroDivisionError
-
-
-# ca = Calculator()
-# print(ca.div_func(4, 2))
+        # 判断 a, b 是否为整数或者小数
+        if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+            # 判断 b 是否为 0
+            if b == 0:
+                raise ZeroDivisionError("除数不能为 0 ！")
+            result = a / b
+            return result
+        raise TypeError("a,b 都必须为整数或者小数！")
