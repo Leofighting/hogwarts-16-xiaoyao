@@ -1,3 +1,6 @@
+from decimal import Decimal
+
+
 class Calculator:
     def add_func(self, a, b):
         """

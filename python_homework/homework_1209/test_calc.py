@@ -30,7 +30,7 @@ class TestCalc:
     def test_add(self, a, b, expect):
         """测试加法正向用例"""
         result = self.calc.add_func(a, b)
-        assert result == expect
+        assert abs(result - expect) < 0.01
 
     @pytest.mark.parametrize("a, b, expect",
                              yaml.safe_load(open("./data/calc_data.yml", encoding="utf-8"))["add_exception"],
@@ -47,7 +47,7 @@ class TestCalc:
     def test_sub(self, a, b, expect):
         """测试减法正向用例"""
         result = self.calc.sub_func(a, b)
-        assert result == expect
+        assert abs(result - expect) < 0.01
 
     @pytest.mark.parametrize("a, b, expect",
                              yaml.safe_load(open("./data/calc_data.yml", encoding="utf-8"))["sub_exception"],
@@ -64,7 +64,7 @@ class TestCalc:
     def test_mul(self, a, b, expect):
         """测试乘法正向用例"""
         result = self.calc.mul_func(a, b)
-        assert result == expect
+        assert abs(result - expect) < 0.01
 
     @pytest.mark.parametrize("a, b, expect",
                              yaml.safe_load(open("./data/calc_data.yml", encoding="utf-8"))["mul_exception"],
@@ -81,7 +81,7 @@ class TestCalc:
     def test_div(self, a, b, expect):
         """测试除法正向用例"""
         result = self.calc.div_func(a, b)
-        assert result == expect
+        assert abs(result - expect) < 0.01
 
     @pytest.mark.parametrize("a, b, expect",
                              yaml.safe_load(open("./data/calc_data.yml", encoding="utf-8"))["div_exception"],
