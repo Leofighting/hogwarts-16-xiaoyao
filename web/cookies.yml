@@ -1,0 +1,46 @@
+- {domain: .work.weixin.qq.com, httpOnly: true, name: wwrtx.vst, path: /, secure: false,
+  value: xnqRvVoR6XnRg6YL4P6I3ZY4X-sraX4RhQq4dOg7Q94F2YBvL-scc1o24eF0JnkB5T-EWc_isEsRy4YXyfybE3Bhvg5mSKPrSY7JBvMv9ywD2GjBMZSjKGsyi7D_4gZLSFvo6_x7mmB58wBv9-ubagcEQFks3Oi__OwiRvKA9Bz_HDSIgMPye8CR1G2iajaqkkvTg6_Kipt9zqU5kNx_Uyo7Z0T_eobLVWy-upZmtdyptz6d3IYJR_4lmXh4-WyEfRYcWCjtQkKuLjoSFhhCfw}
+- {domain: .work.weixin.qq.com, httpOnly: false, name: wxpay.vid, path: /, secure: false,
+  value: '1688851976796534'}
+- {domain: .work.weixin.qq.com, httpOnly: false, name: wxpay.corpid, path: /, secure: false,
+  value: '1970325128211808'}
+- {domain: .work.weixin.qq.com, httpOnly: true, name: wwrtx.sid, path: /, secure: false,
+  value: xHYRzolHyge1EbFANQBNz3LD1EuzzODzz-Iv3JslPPECqKePFPeAryh3CBGj5TnV}
+- {domain: .work.weixin.qq.com, httpOnly: false, name: wwrtx.d2st, path: /, secure: false,
+  value: a1196668}
+- {domain: .work.weixin.qq.com, httpOnly: true, name: wwrtx.refid, path: /, secure: false,
+  value: '3081782641778438'}
+- {domain: work.weixin.qq.com, expiry: 1608589650, httpOnly: true, name: ww_rtkey,
+  path: /, secure: false, value: 6ipqo37}
+- {domain: .work.weixin.qq.com, expiry: 1639742551, httpOnly: false, name: wwrtx.c_gdpr,
+  path: /, secure: false, value: '0'}
+- {domain: .work.weixin.qq.com, expiry: 1611155644, httpOnly: false, name: wwrtx.i18n_lan,
+  path: /, secure: false, value: zh}
+- {domain: .work.weixin.qq.com, httpOnly: false, name: wwrtx.vid, path: /, secure: false,
+  value: '1688851976796534'}
+- {domain: .qq.com, expiry: 1912318445, httpOnly: false, name: iip, path: /, secure: false,
+  value: '0'}
+- {domain: .qq.com, expiry: 1900198435, httpOnly: false, name: pac_uid, path: /, secure: false,
+  value: '1_469342045'}
+- {domain: .qq.com, expiry: 1644585687, httpOnly: false, name: _ga, path: /, secure: false,
+  value: GA1.2.1351510267.1581513687}
+- {domain: .qq.com, expiry: 2147385600, httpOnly: false, name: o_cookie, path: /,
+  secure: false, value: '469342045'}
+- {domain: .qq.com, expiry: 1896167196, httpOnly: false, name: mobileUV, path: /,
+  secure: false, value: 1_1700f738dea_934e7}
+- {domain: .qq.com, expiry: 2147483648, httpOnly: false, name: ptcz, path: /, secure: false,
+  value: 6a0c44305b986b7186eb10976c4a4401e87b4de993cdbdd1f5d0e51da37eb950}
+- {domain: .qq.com, expiry: 1621144523, httpOnly: true, name: ied_qq, path: /, secure: false,
+  value: o0469342045}
+- {domain: .qq.com, expiry: 2147385600, httpOnly: false, name: pgv_pvi, path: /, secure: false,
+  value: '1271965696'}
+- {domain: .qq.com, expiry: 1892940432, httpOnly: false, name: tvfe_boss_uuid, path: /,
+  secure: false, value: 931a9fa2f2578840}
+- {domain: .qq.com, expiry: 2147483648, httpOnly: false, name: RK, path: /, secure: false,
+  value: /SSgBkdtEz}
+- {domain: .work.weixin.qq.com, httpOnly: true, name: wwrtx.ltype, path: /, secure: false,
+  value: '1'}
+- {domain: .work.weixin.qq.com, httpOnly: true, name: wwrtx.ref, path: /, secure: false,
+  value: direct}
+- {domain: .qq.com, expiry: 2147385600, httpOnly: false, name: pgv_pvid, path: /,
+  secure: false, value: '2428854886'}
