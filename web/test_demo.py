@@ -90,9 +90,10 @@ def test_get_cookie():
     opt.debugger_address = "127.0.0.1:9222"
     driver = webdriver.Chrome(options=opt)
     driver.implicitly_wait(5)
+    time.sleep(10)
     driver.get("https://work.weixin.qq.com/wework_admin/frame#contacts")
     cookies = driver.get_cookies()
-    print(cookies)
+    # print(cookies)
     with open("cookies.yml", "w", encoding="utf-8") as file:
         yaml.dump(cookies, file)
 

@@ -1,0 +1,30 @@
+- {domain: .work.weixin.qq.com, httpOnly: false, name: wwrtx.vid, path: /, secure: false,
+  value: '1688851976796534'}
+- {domain: .work.weixin.qq.com, httpOnly: true, name: wwrtx.vst, path: /, secure: false,
+  value: dLLXmx66mT65_vkMYUBLz6o8zNXXFbcyGQhJh6IxZaMbRgkCCtHqkKKjxQGSDXmYeY0MNIqdDQnyv7frZiApWbv--0oDs8PJYkcElad6nw2QMBiPAuLg-uYZYWe3rffeDb8NtRxmGGBOsJ70Cc8gwbtKQxFcEjO5McZJPGnSX9dNS2IkQNsqGl8HjJrLn6dpl2MzFQqmhG9TajG_RuAC8M1G6rr3TPmz_eoNprwLncePIBPn-PdbKPF12_WertZxS2FlP9Jz9URsVpeb-gWL6g}
+- {domain: .work.weixin.qq.com, httpOnly: false, name: wxpay.vid, path: /, secure: false,
+  value: '1688851976796534'}
+- {domain: .work.weixin.qq.com, httpOnly: false, name: wxpay.corpid, path: /, secure: false,
+  value: '1970325128211808'}
+- {domain: .work.weixin.qq.com, httpOnly: true, name: wwrtx.ref, path: /, secure: false,
+  value: direct}
+- {domain: .work.weixin.qq.com, httpOnly: true, name: wwrtx.ltype, path: /, secure: false,
+  value: '1'}
+- {domain: .work.weixin.qq.com, httpOnly: false, name: wwrtx.d2st, path: /, secure: false,
+  value: a6705726}
+- {domain: work.weixin.qq.com, expiry: 1610209166, httpOnly: true, name: ww_rtkey,
+  path: /, secure: false, value: ql6j1n}
+- {domain: .qq.com, expiry: 1610264039, httpOnly: false, name: _gid, path: /, secure: false,
+  value: GA1.2.88478693.1610177632}
+- {domain: .work.weixin.qq.com, httpOnly: true, name: wwrtx.refid, path: /, secure: false,
+  value: '25450428012029417'}
+- {domain: .work.weixin.qq.com, httpOnly: true, name: wwrtx.sid, path: /, secure: false,
+  value: xHYRzolHyge1EbFANQBNz4IH-ofdEfDp6-ZA2z3Nqxh3L0iFlyPuRADJtR1Vqg2y}
+- {domain: .qq.com, expiry: 1610177691, httpOnly: false, name: _gat, path: /, secure: false,
+  value: '1'}
+- {domain: .qq.com, expiry: 1673249639, httpOnly: false, name: _ga, path: /, secure: false,
+  value: GA1.2.878178616.1610177632}
+- {domain: .work.weixin.qq.com, expiry: 1641713630, httpOnly: false, name: wwrtx.c_gdpr,
+  path: /, secure: false, value: '0'}
+- {domain: .work.weixin.qq.com, expiry: 1612769641, httpOnly: false, name: wwrtx.i18n_lan,
+  path: /, secure: false, value: zh}
