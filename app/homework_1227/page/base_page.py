@@ -16,6 +16,9 @@ class BasePage:
     def find(self, by, locator):
         return self.driver.find_element(by, locator)
 
+    def finds(self, by, locator):
+        return self.driver.find_elements(by, locator)
+
     def find_and_click(self, by, locator):
         self.find(by, locator).click()
 
@@ -37,6 +40,19 @@ class BasePage:
         WebDriverWait(self.driver, 10).until(
             expected_conditions.presence_of_element_located(locator)
         )
+
+    def swipe_find(self, by, locator):
+        self.driver.implicitly_wait(3)
+        elements = self.finds(by, locator)
+
+        while len(elements) == 0:
+            self.driver.swipe(10, 800, 10, 300)
+            elements = self.finds(by, locator)
+
+        return elements[0]
+
+    def swipe_find_click(self, by, locator):
+        self.swipe_find(by, locator).click()
 
     def quit_after(self, timeout):
         time.sleep(timeout)
