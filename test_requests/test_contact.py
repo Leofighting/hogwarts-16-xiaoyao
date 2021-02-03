@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 __author__ = "leo"
 
+import pytest
 import requests
 
 from test_requests.utils.random_tool import USERNAME, PHONE, ID
@@ -19,16 +20,17 @@ def get_token():
     return token
 
 
-def test_defect_member():
+@pytest.mark.parametrize("tmp", range(50))
+def test_defect_member(tmp):
     get_member_url = "https://qyapi.weixin.qq.com/cgi-bin/user/get"
     get_member_params = {
         "access_token": get_token(),
-        "userid": "22"
+        "userid": "8517"
     }
 
     r1 = requests.get(url=get_member_url, params=get_member_params)
     print(r1.json())
-    assert "Adam Cabrera" == r1.json()["name"]
+    assert "Barry Delgado" == r1.json()["name"]
 
 
 def test_update_member():
