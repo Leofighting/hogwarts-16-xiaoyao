@@ -5,7 +5,6 @@ from web.homework_1220.page.index_page import IndexPage
 
 
 class TestIndex:
-
     def setup_class(self):
         self.index_page = IndexPage()
 

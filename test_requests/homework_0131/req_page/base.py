@@ -19,9 +19,6 @@ class Base:
             corpsecret = self.corpsecret
 
         url = "https://qyapi.weixin.qq.com/cgi-bin/gettoken"
-        params = {
-            "corpid": corpid,
-            "corpsecret": corpsecret
-        }
+        params = {"corpid": corpid, "corpsecret": corpsecret}
         r = requests.get(url=url, params=params)
         return r.json()

@@ -15,7 +15,10 @@ class AddMember(BasePage):
     _element_phone = (By.ID, "memberAdd_phone")
     _element_mail = (By.ID, "memberAdd_mail")
     _element_save = (By.CSS_SELECTOR, ".js_btn_save")
-    _element_error_message = (By.XPATH, "//div[@class='ww_telInput']/../div[@class='ww_inputWithTips_tips']")
+    _element_error_message = (
+        By.XPATH,
+        "//div[@class='ww_telInput']/../div[@class='ww_inputWithTips_tips']",
+    )
     _elements_error = (By.CSS_SELECTOR, ".ww_inputWithTips_tips")
 
     def add_member(self, username, acctid, phone, email):
@@ -24,6 +27,7 @@ class AddMember(BasePage):
         :return:
         """
         from web.homework_1220.page.contact_page import ContactPage
+
         self.driver.find_element(*self._element_username).send_keys(username)
         self.driver.find_element(*self._element_acctid).send_keys(acctid)
         self.driver.find_element(*self._element_phone).send_keys(phone)

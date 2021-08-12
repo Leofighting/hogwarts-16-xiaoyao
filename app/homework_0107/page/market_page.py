@@ -9,6 +9,8 @@ from app.homework_0107.page.search_page import SearchPage
 
 class MarketPage(BasePage):
     def goto_search(self):
-        self.find_and_click(MobileBy.XPATH, "//*[@resource-id='com.xueqiu.android:id/action_search']")
+        self.find_and_click(
+            MobileBy.XPATH, "//*[@resource-id='com.xueqiu.android:id/action_search']"
+        )
 
         return SearchPage(self.driver)

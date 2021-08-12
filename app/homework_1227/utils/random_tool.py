@@ -5,7 +5,6 @@ from faker import Faker, Factory
 
 
 class RandomTool:
-
     def __init__(self):
         self.fake = Faker("zh_CN")
         self.factory = Factory.create()

@@ -11,7 +11,6 @@ from web.homework_1220.utils.get_cookies import get_cookies
 
 
 class BasePage:
-
     def __init__(self, base_driver=None):
         base_driver: WebDriver
         if base_driver is None:
@@ -42,7 +41,8 @@ class BasePage:
 
     def wait_click(self, locator):
         WebDriverWait(self.driver).until(
-            expected_conditions.element_to_be_clickable(locator))
+            expected_conditions.element_to_be_clickable(locator)
+        )
 
     def quit(self):
         self.driver.quit()

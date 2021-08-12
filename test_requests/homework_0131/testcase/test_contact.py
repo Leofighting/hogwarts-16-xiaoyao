@@ -15,7 +15,10 @@ class TestContact:
     def setup_class(self):
         self.contact = Contact()
 
-    @pytest.mark.parametrize("corpid, secret, result", ([None, None, 0], ["xxx", None, 40013], [None, "11111", 40001]))
+    @pytest.mark.parametrize(
+        "corpid, secret, result",
+        ([None, None, 0], ["xxx", None, 40013], [None, "11111", 40001]),
+    )
     def test_token(self, corpid, secret, result):
         r = self.contact.get_token(corpid, secret)
         assert r.get("errcode") == result

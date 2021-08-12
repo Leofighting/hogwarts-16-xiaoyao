@@ -20,19 +20,25 @@ class ContactAdd(BasePage):
         :return:
         """
         self.find_and_send(
-            MobileBy.XPATH, "//*[contains(@text, '姓名')]/..//*[@text='必填']", USERNAME)
+            MobileBy.XPATH, "//*[contains(@text, '姓名')]/..//*[@text='必填']", USERNAME
+        )
 
         self.find_and_click(
-            MobileBy.XPATH, "//*[contains(@text, '性别')]/..//*[@text='男']")
+            MobileBy.XPATH, "//*[contains(@text, '性别')]/..//*[@text='男']"
+        )
 
-        locator = (MobileBy.XPATH, "//*[@resource-id='com.tencent.wework:id/elq' and @text='女']")
+        locator = (
+            MobileBy.XPATH,
+            "//*[@resource-id='com.tencent.wework:id/elq' and @text='女']",
+        )
 
         self.wait_for(locator)
 
         self.find_and_click(MobileBy.XPATH, "//*[@text='女']")
 
         self.find_and_send(
-            MobileBy.XPATH, "//*[contains(@text, '手机')]/..//*[@text='手机号']", PHONE)
+            MobileBy.XPATH, "//*[contains(@text, '手机')]/..//*[@text='手机号']", PHONE
+        )
 
         self.find_and_click(MobileBy.XPATH, "//*[@text='保存']")
 

@@ -11,6 +11,7 @@ class MainPage(BasePage):
     """
     首页
     """
+
     def goto_address(self):
         """
         进入通讯录
@@ -18,6 +19,6 @@ class MainPage(BasePage):
         """
         self.find_and_click(
             MobileBy.XPATH,
-            "//*[contains(@text, '通讯录') and @resource-id='com.tencent.wework:id/elq']"
+            "//*[contains(@text, '通讯录') and @resource-id='com.tencent.wework:id/elq']",
         )
         return AddressListPage(self.driver)

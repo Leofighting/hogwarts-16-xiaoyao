@@ -14,8 +14,10 @@ from app.homework_0107.black_handle import black_wrapper
 class BasePage:
     def __init__(self, driver: WebDriver = None):
         self.driver = driver
-        self.black_list = [(MobileBy.XPATH, "//*[contains(@text, '跳过广告')]"),
-                           (MobileBy.XPATH, "//*[@resource-id='com.xueqiu.android:id/iv_close']")]
+        self.black_list = [
+            (MobileBy.XPATH, "//*[contains(@text, '跳过广告')]"),
+            (MobileBy.XPATH, "//*[@resource-id='com.xueqiu.android:id/iv_close']"),
+        ]
 
     @black_wrapper
     def find(self, by, locator):
@@ -28,12 +30,13 @@ class BasePage:
         self.find(by, locator).click()
 
     def scroll_find(self, text):
-        return self.driver.find_element(MobileBy.
-                                        ANDROID_UIAUTOMATOR,
-                                        'new UiScrollable(new UiSelector().'
-                                        'scrollable(true).instance(0)).'
-                                        'scrollIntoView(new UiSelector().'
-                                        'text("{text}").instance(0));'.format(text=text))
+        return self.driver.find_element(
+            MobileBy.ANDROID_UIAUTOMATOR,
+            "new UiScrollable(new UiSelector()."
+            "scrollable(true).instance(0))."
+            "scrollIntoView(new UiSelector()."
+            'text("{text}").instance(0));'.format(text=text),
+        )
 
     def scroll_find_click(self, text):
         self.scroll_find(text).click()

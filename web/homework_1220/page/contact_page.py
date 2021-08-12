@@ -12,9 +12,12 @@ from web.homework_1220.page.base_page import BasePage
 
 class ContactPage(BasePage):
 
-    _element_add = (By.CSS_SELECTOR, '.js_create_dropdown')
-    _element_add_department = (By.CSS_SELECTOR, '.js_create_party')
-    _elements_member = (By.XPATH, "//tr[contains(@class, 'member_colRight_memberTable_tr_Inactive')]/td[2]")
+    _element_add = (By.CSS_SELECTOR, ".js_create_dropdown")
+    _element_add_department = (By.CSS_SELECTOR, ".js_create_party")
+    _elements_member = (
+        By.XPATH,
+        "//tr[contains(@class, 'member_colRight_memberTable_tr_Inactive')]/td[2]",
+    )
     _element_add_member = (By.LINK_TEXT, "添加成员")
     _elements_department = (By.CSS_SELECTOR, ".jstree-anchor")
 

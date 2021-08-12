@@ -14,17 +14,21 @@ def save_cookie():
     driver.get("https://work.weixin.qq.com/wework_admin/frame")
     cookies = driver.get_cookies()
     # print(cookies)
-    with open("E:\\hogwarts_16\\project\\hogwarts-16-xiaoyao\\web\\homework_1220\\data\\cookies.yml",
-              "w",
-              encoding="utf-8") as file:
+    with open(
+        "E:\\hogwarts_16\\project\\hogwarts-16-xiaoyao\\web\\homework_1220\\data\\cookies.yml",
+        "w",
+        encoding="utf-8",
+    ) as file:
         yaml.dump(cookies, file)
 
     driver.quit()
 
 
 def get_cookies(driver):
-    with open("E:\\hogwarts_16\\project\\hogwarts-16-xiaoyao\\web\\homework_1220\\data\\cookies.yml",
-              encoding="utf-8") as file:
+    with open(
+        "E:\\hogwarts_16\\project\\hogwarts-16-xiaoyao\\web\\homework_1220\\data\\cookies.yml",
+        encoding="utf-8",
+    ) as file:
         yaml_date = yaml.safe_load(file)
         for cookie in yaml_date:
             driver.add_cookie(cookie)

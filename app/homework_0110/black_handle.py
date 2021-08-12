@@ -13,7 +13,9 @@ def black_wrapper(func):
         base_page = args[0]
         try:
             # 添加日志
-            logging.info("start find : \nargs: " + str(args) + "\nkwargs: " + str(kwargs))
+            logging.info(
+                "start find : \nargs: " + str(args) + "\nkwargs: " + str(kwargs)
+            )
             return func(*args, **kwargs)
         except Exception as e:
             base_page.driver.implicitly_wait(2)
